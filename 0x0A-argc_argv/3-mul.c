@@ -16,18 +16,18 @@ int _atoi(char *s)
 	d = 0;
 	e = 0;
 	f = 0;
-	while (s[len] != '\0')
-	len++;
-	while (a < len && e == 0)
+	while (s[d] != '\0')
+	d++;
+	while (a < d && e == 0)
 	{
 	if (s[a] == '-')
 	++b;
 	if (s[a] >= '0' && s[a] <= '9')
 	{
-	digit = s[a] - '0';
+	f = s[a] - '0';
 	if (b % 2)
 	f = -f;
-	c = c * 10 + digit;
+	c = c * 10 + f;
 	e = 1;
 	if (s[a + 1] < '0' || s[a + 1] > '9')
 	break;
@@ -37,7 +37,7 @@ int _atoi(char *s)
 	}
 	if (e == 0)
 	return (0);
-	return (n);
+	return (c);
 }
 int main(int argc, char *argv[])
 {
