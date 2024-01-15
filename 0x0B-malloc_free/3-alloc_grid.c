@@ -32,7 +32,7 @@ int **alloc_grid(int width, int height)
 	for (ag = 0; ag < height; ag++)
 	{
 	for (gb = 0; gb < width; gb++)
-	epip[ag][bg] = 0;
+	epip[ag][gb] = 0;
 	}
 	return (epip);
 }
