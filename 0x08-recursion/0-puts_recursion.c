@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * _puts_recursion - main function
+  * _puts_recursion -major fxt
   *
-  * @s: function parameter
+  * @s: fxt = function
   *
   * Return: Always 0.
   */
